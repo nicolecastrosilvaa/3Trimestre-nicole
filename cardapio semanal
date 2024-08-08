@@ -1,0 +1,36 @@
+.topo {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: green;
+  }
+  main {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: yellowgreen;
+  }
+  section, aside {
+    width: 45%;
+  }
+  section header {
+    padding: 10px;
+    text-align: center;
+    background-color: orange;
+  }
+  section div {
+    padding: 10px;
+    text-align: center;
+    background-color: yellow;
+  }
+  aside header {
+    padding: 10px;
+    text-align: center;
+    background-color: orange;
+  }
+  aside div {
+    padding: 10px;
+    text-align: center;
+    background-color: yellow;
+  }

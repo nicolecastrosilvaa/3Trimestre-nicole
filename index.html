@@ -4,151 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação do HTML no VSCode - Trilha de Aprendizagem</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Site simples com html e css</title>
 </head>
-<style>
-h1{
-width: 300px;
-height: 50px;
-background-color: lightgray;
-border-width: 10px;
-border-style: solid;
-border-color: brown;
-padding: 20px;
-outline-style: solid;
-outline-color: blue;
-margin: 50px;
-
-}
-</style>
-<link rel="stylesheet" href="style.css">
 <body>
-    <h1 class="caixa">exemplo de caixa</h1>
-    <header class="cabeçalho">
-        <h1 class="cabeçalho h1">Olá, Mundo!</h1>
-    </header>
-        <hr>
-    <p>Esse é o meu primeiro documento HTML!
-        Estou muito feliz.
-    <mark>A Ingrid e o Nicolas, são meus amores!</mark>
-    A Lene é minha Rainha!</p>
-    <p>Nessa vida, nunca é tarde para aprender algo.</p>
-    <hr>
-    <h1 class="paragrafo-ingrid">Ingrid Zanesco Boeira</h1>
-    <hr>
-    <p>11 anos, 1,45m, muito <i>simpática</i>, inteligente e amorosa, tem uma cachorrinha chamada "LOLAH".</p>
-    <hr>
-    <h1>Nicolas Zanesco Boeira</h1>
-    <hr>
-    7 anos, 1,20m, amoroso, inteligente e gosta muito de beijocas.
-    <H1>SIGNIFICADO DE HEAD E ALGUMAS TAG (MARCAÇÕES NO HTML)</H1>
-    <p>Head significa cabeça, dentro de Head colocamos algumas marcações como CHARSET="UTF-8" que significa que os caracteres serão com acento</p>
-    <hr>
-        <h1>Parágrafos e Quebras de Linhas</h1>
-      <hr>
-      <p>Você pode escrever um parágrafo
-        de qualquer jeito,
-        basta colocar no
-         meio do par de tags &lt;p /p&gt;. <!--lt significa LASS THAN e gt GREATER THAN--></p>
-         <p>Se eu precisar quebrar o o texto em algum lugar específico posso utilizar a tag &lt;br&gt; (tag &lt;br&gt; significa break row ou pro português quebra de linha).</p>
-         <p>Então como exemplo vou <br>
-            escrever sem virgula
-            esse parágrafo e quebrar exatamente aqui entre "vou" e "escrever".</p>
-            <p>Vamos adicionar alguns símbolos</p>
-            &reg;<br>
-            &copy;<br>
-            &euro;<br>
-            &pound;<br>
-            &yen;<br>
-            &cent;<br>
-            &uparrow;<br>
-            &downarrow;<br>
-            &Delta;<br> <!--delta com a letra maiscula aparece o simbolo do triângulo-->
-            &delta;<br>
-             <!--delta com letra minuscula aparece o simbolo original-->
-    <p>Vamos adicionar abaixo alguns emojis: <br>
-    &#x1F596;
-    &#x1F98A;<br></p> <!--é só pesquisar no emojipedia.org-->
-   
-   
-            <span style="font-size: 250px ;">&spades;</span><br>
-            <span style='font-size: 100px;'>&#9728;</span
-       
-        <h1>testando carga de imagem</h1>
-        <p>Abaixo você vai ver uma imagem na mesma pasta</p>
-   
-        <img src="logo_html" alt="logo HTML5">
-        <hr>
-        <h2>testando carga de imagem com transparencia</h2>
-        <p>abaixo uma imagem retirada do google imagens utilizando as ferramentas e usando a opção transparencia</p>
-        <img src="logo html com transparencia.png" alt="logo html png">
-        <hr>
-        <h3>Testando carga de imagem tratada no gimp</h3>
-        <p>abaixo uma imagem reduzida no gimp para não ficar enorme na página</p>
-        <img src="logo_html_150.png" alt="logo html5 tratada e reduzida no gimp">
-        <hr>
-        <h3>Testando imagens carregadas em subpastas</h3>
-        <p>Abaixo uma imagem carregada de uma subpasta, utilizando a mesma regra de CTRL+SPACE, buscando a pasta imagens</p>
-        <img src="imagens/logo html na subpasta.png" alt="logo html da subpasta">
-        <hr>
-        <h4>Testando carga de imagem pelo link do endereço da imagem</h4>
-        <hr>
-        <h1 width: 600px;
-        height: 50px;
-        background-color: lightgray;
-        border-width: 10px;
-        border-style: solid;
-        border-color: brown;
-        padding: 20px;
-        outline-style: solid;
-        outline-color: blue;
-        margin: 50px;>Abaixo uma imagem onde fui na internet, pesquisei a <b>imagem</b> que quero, fleguei para ir no endereço que esta imagem está hospedada e fleguei com o botão direito para copiar o link do endereço da imagem</h1>
-        <hr>
-        <img src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png&quot; alt="logo JS copiado o link de endereço">
-        <hr>
-        <h1>Incluindo listas Ordenadas</h1>
-        <p>abaixo exemplo de listas ordenadas</p>
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
-    <!--a tag <ol> possui um parâmetro type, onde A tag <ol> possui um parâmetro type, onde configuramos o tipo de marcador da lista
-    atual. As opções de valores para esse parâmetro são:
-    ‣ 1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, …
-    ‣ A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, …
-    ‣ a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, …
-    ‣ I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV, …
-    ‣ i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv, …  -->
-    <hr>
-    <h2>Incluindo Listas não ordenadas</h2>
-    <p>Se você compreendeu a criação de listas ordenadas, com certeza vai entender as
-        unordered lists, também chamadas de listas com marcadores, que são aquelas onde
-        a ordem dos itens não influenciará no significado da lista. Ela é apenas uma ótima
-        maneira para organizar os itens que não apresentam uma classificação
-        necessariamente
-    </p>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3  </li>  
-    </ul>
-    <a href=""></a>
-    <div></div>
-    <h1>Principais formatações</h1>
-    <h2>Negrito ou termo em destaque</h2>
-    <p>Nesta Frase temos um <b>termo em negrito</b> usando a TAG B (não semântica).</p>
-    <p>Nesta Frase temos um <strong>termo em destaque</strong> usando a TAG Strong (semântica que significa ter um sentido a frase ou palavra)</p>
-    <h2>Itálico / Ênfase</h2>
-    <p>Nesta frase, temos um <i>termo em itálico</i>  usando a TAG I (não semântica)</p>
-    Nesta frase temos <em>um termo em ênfase</em> utilizando a tag EM (com semântica)
-     <h2>Podemos criar também <mark>um texto marcado</mark> (igual a caneta marca texto) usando a tag mark </h2>
-    <h2>Texto grande e texto pequeno</h2>
-    <p>podemos criar um <big>texto grande</big> usando a tag já obsoleta big e marcar como <small>texto pequeno com a tag small</p></small>
-    <h2>Texto inserido e texto deletado</h2>
-    <p>Podemos <ins>inserir um texto</ins> (onde a opção de underline aparece) e <del>deletar um texto</del> onde ele está alí, mas deve ser desconsiderado, nesse caso usando a tag del para deletado e ins para inserido</p>
-    <h2>Pessoal, para agilizar o envelopamento da frase ou palavra que você necessita utilizar uma TAG, você faz exatamente o seguinte: Digita Ctrl+Shift+P (vai abrir um campo e nele você digita abb, aperta enter e digita a tag com o texto ou palavra selecionada, recapitulando: selecione a frase ou palavra, depois digite CTRL+SHIFT+P e digite a tag</h2>
-    <h2>Texto subescrito (tag sub) e sobrescrito (tag sup)</h2>
-    <p>Para utilizar o subescrito em frases ou formulas que necessitam que o número ou letra fique abaixo da linha e sobre escrito para formula que você necessite colocar uma exponencial por exemplo. Nesse caso vamos a duas formulas: x<sup>20</sup>+30 e H<sub>2</sub>O</p>  
+    <nav>
+
+        <div class="logo">
+            <a href="sobremim.html"> Prof. Fernando Zanesco </a>
+        </div>
+
+        <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="sobreocolegio.html"> Sobre o Colégio</a> </li>
+            <li> <a href="cardapiosemanal.html"> Cardápio Semanal</a> </li>
+            <li> <a href="minhas musicas favoritas.html"> Curiosidades </a> </li>
+            <li> <a href="cursosevestibular.html"> Cursos e Vestibular </a> </li>
+            <li> <a href="#"> Fofocas de Corredor </a> </li>
+            <li> <a href="#"> Esportes, Jogos e Competições </a> </li>
+            <li> <a href="#"> Atividades de Contraturno</a> </li>
+            <li> <a href="#"> Plataformas Digitais</a> </li>
+            <li> <a href="#"> Clube de Astronomia e Matemática</a> </li>
+            <li> <a href="#"> Clube da Leitura</a> </li>
+
+        </ul>
+
+    </nav>
+    <section class="banner">
+        <div class="texto">
+           <h1 class="titulo">Querido(a) aluno(a) do Helena Kolody, como criar um site incrível somente</h1>
+           <h2 class="sub_titulo">usando HTML & CSS puro</h2>
+           <div class="botoes">
+            <button class="n-overlay"><a href="saibamais.html">Saiba Mais</a></button>
+               <button class="n-overlay"><a href="inscrever.html">Inscrever</a></button>
+              <button class="overlay"><a href="curioso.html">Você é curioso?</a></button>
+           </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+        <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
+        <nav>
+            <ul>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
