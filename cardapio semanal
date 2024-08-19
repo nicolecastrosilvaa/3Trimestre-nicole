@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: green;
+    background-color: pink;
   }
   main {
     padding: 20px 0px;
