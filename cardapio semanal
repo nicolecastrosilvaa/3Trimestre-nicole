@@ -9,7 +9,7 @@
     padding: 20px 0px;
     display: flex;
     justify-content: space-around;
-    background-color: yellowgreen;
+    background-color: rgb(211, 102, 202);
   }
   section, aside {
     width: 45%;
