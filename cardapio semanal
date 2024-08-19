@@ -12,7 +12,7 @@
     background-color: rgb(211, 102, 202);
   }
   section, aside {
-    width: 45%;
+    width: 50%;
   }
   section header {
     padding: 10px;
